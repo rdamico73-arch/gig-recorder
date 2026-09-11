@@ -3,94 +3,533 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gig Recorder · Support</title>
-<meta name="description" content="Gig Recorder support. Record the whole gig from the mic or the board, split it into songs, and relive every gig as a playlist with its own photo. Help, FAQ, and contact.">
+<title>Gig Recorder — Record Live Sets & Auto-Split Into Songs</title>
+<meta name="description" content="Gig Recorder records your whole gig on iPhone, iPad, or Mac, splits it into named songs automatically, and turns the night into a shareable playlist. Free to start.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://rdamico73-arch.github.io/gig-recorder/index.html">
+<meta name="theme-color" content="#0b0f17">
+<link rel="icon" href="images/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+<!-- Open Graph / social preview -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Gig Recorder">
+<meta property="og:title" content="Gig Recorder — Record the Entire Show. Walk Away With a Playlist.">
+<meta property="og:description" content="Records your whole gig, splits it into named songs automatically, and turns the night into a playlist you can replay and share with your band.">
+<meta property="og:url" content="https://rdamico73-arch.github.io/gig-recorder/index.html">
+<meta property="og:image" content="https://rdamico73-arch.github.io/gig-recorder/images/app-icon-512.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Gig Recorder — Record the Entire Show. Walk Away With a Playlist.">
+<meta name="twitter:description" content="Records your whole gig, splits it into named songs automatically, and turns the night into a playlist you can replay and share with your band.">
+<meta name="twitter:image" content="https://rdamico73-arch.github.io/gig-recorder/images/app-icon-512.png">
+
+<!-- Structured data: helps Google, Bing, and AI answer engines (ChatGPT, Perplexity,
+     Gemini, Claude) understand and cite this app + its FAQ directly. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Gig Recorder",
+  "alternateName": "Gig Recorder: Live Music",
+  "applicationCategory": "MusicApplication",
+  "operatingSystem": "iOS, iPadOS, macOS",
+  "url": "https://rdamico73-arch.github.io/gig-recorder/index.html",
+  "description": "Gig Recorder records an entire live set on iPhone, iPad, or Mac, automatically splits it into individually named songs, and turns the night into a playlist you can replay and share with your band.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "description": "Free to record, split, name, edit, Enhance, and build playlists. Gig Recorder Pro is a $1.29 one-time in-app purchase that unlocks sharing, export, Dropbox/iCloud sync, and custom Effects."
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Robbie D Productions"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is there an app that records a whole live set and splits it into songs?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Gig Recorder is a live music recording app for iPhone, iPad, and Mac that records an entire gig, concert set, or rehearsal as one take and automatically splits it into separate, named song tracks when you stop. You can adjust any split in the waveform editor." }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Gig Recorder know the names of my songs?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Gig Recorder names songs using a private song reference library built only from your own recordings. Name a song once and the app recognizes it the next time you play it. Every name you confirm or correct teaches the library, so auto-naming and splitting get faster and more accurate the more gigs you record." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Gig Recorder use Shazam or an online song database?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Song recognition runs entirely on your device against your own private library. Gig Recorder never looks up your audio against a public song catalog and never sends audio fingerprints to any online service." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my song library or recording data shared with other users?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Your reference library is built from your recordings alone and stays on your device. It is never pooled with other users, shared, sold, or used to improve anything for anyone else." }
+    },
+    {
+      "@type": "Question",
+      "name": "Where are my recordings stored, and does Gig Recorder collect any data?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Recordings are stored on your device by default; with Pro you can sync them to your own Dropbox or iCloud. Gig Recorder runs no servers and has no accounts, no analytics, and no ads. Nothing is collected or stored for use by anyone but you." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Gig Recorder free? What does Pro cost?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Gig Recorder is free to download and free to record, split, name, edit, Enhance, and build playlists. Gig Recorder Pro is a one-time $1.29 in-app purchase that unlocks sharing, exporting songs or whole sets, Dropbox and iCloud sync, and custom Effects. There is no subscription." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I share a gig recording with my band or fans?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, with Gig Recorder Pro. Share a set or a single song to bandmates, friends, or fans in a tap, export individual songs or the entire set as audio files, or sync everything to your own Dropbox or iCloud. Receiving and listening to a shared playlist is always free." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Gig Recorder improve the sound quality of a live recording?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. One-tap Enhance cleans up and levels the whole recording so it sounds like the room sounded, and it's free. Gig Recorder Pro lets you fine-tune the Effects chain to taste." }
+    },
+    {
+      "@type": "Question",
+      "name": "What devices does Gig Recorder work on?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Gig Recorder runs on iPhone, iPad, and Mac, and you can start and stop recording hands-free from your Apple Watch." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need an account to use Gig Recorder?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. There is no login or account to record, edit, or build playlists. Sharing with bandmates uses your own iCloud, and exports go to your own Dropbox or iCloud." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can fans use Gig Recorder to record concerts?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, where recording is permitted. At record-friendly shows, festivals, and open mics, Gig Recorder splits the night into named songs, so you don't need to know the setlist to find your favorite moment. Please record only where the artist and venue allow it." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use Gig Recorder to record band rehearsals or practice?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Record the whole rehearsal, get it back split into songs, fix any boundary in the editor, and, with Pro, share the takes with the band for review the same night." }
+    }
+  ]
+}
+</script>
+
 <style>
-  :root { --bg:#0b0f17; --card:#121826; --text:#e8ecf3; --muted:#9aa4b5; --accent:#3b82f6; --line:#1f2937; }
+  :root { --bg:#0b0f17; --card:#121826; --text:#e8ecf3; --muted:#9aa4b5; --accent:#3b82f6; --accent2:#8b5cf6; --line:#1f2937; }
   * { box-sizing:border-box; }
   body { margin:0; background:var(--bg); color:var(--text); font:17px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",Arial,sans-serif; }
-  header { border-bottom:1px solid var(--line); }
-  .wrap { max-width:760px; margin:0 auto; padding:24px 20px; }
-  nav a { color:var(--muted); text-decoration:none; margin-right:18px; font-size:15px; }
-  nav a:hover, nav a.on { color:var(--text); }
-  h1 { font-size:34px; line-height:1.15; margin:28px 0 6px; }
-  .sub { color:var(--muted); margin:0 0 28px; font-size:19px; }
-  h2 { font-size:22px; margin:40px 0 10px; }
-  h3 { font-size:18px; margin:22px 0 4px; }
+  img { max-width:100%; height:auto; display:block; }
+  header { border-bottom:1px solid var(--line); position:sticky; top:0; background:rgba(11,15,23,.9); backdrop-filter:blur(8px); z-index:10; }
+  .wrap { max-width:1040px; margin:0 auto; padding:24px 20px; }
+  nav { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+  nav .brand { color:var(--text); text-decoration:none; font-weight:700; }
+  nav .links a { color:var(--muted); text-decoration:none; margin-left:18px; font-size:15px; }
+  nav .links a:hover { color:var(--text); }
+
+  section { padding:64px 0; }
+  section.tight { padding:40px 0; }
+  .narrow { max-width:760px; margin:0 auto; padding:0 20px; }
+
+  h1 { font-size:44px; line-height:1.12; margin:0 0 16px; letter-spacing:-0.01em; }
+  h2 { font-size:30px; line-height:1.2; margin:0 0 12px; letter-spacing:-0.01em; }
+  h3 { font-size:19px; margin:0 0 8px; }
+  .eyebrow { color:var(--accent); font-weight:700; font-size:13px; letter-spacing:.08em; text-transform:uppercase; margin:0 0 10px; }
+  .lead { font-size:20px; color:var(--muted); margin:0 0 28px; max-width:560px; }
+  .tagline { color:var(--muted); }
+
+  .btn { display:inline-block; text-decoration:none; padding:13px 22px; border-radius:12px; font-weight:600; font-size:16px; }
+  .btn-primary { background:var(--accent); color:#fff; }
+  .btn-primary:hover { background:#2f6fe0; }
+  .btn-ghost { color:var(--text); border:1px solid var(--line); }
+  .btn-ghost:hover { border-color:var(--accent); }
+  .cta-row { display:flex; gap:14px; flex-wrap:wrap; margin-top:8px; }
+  .cta-note { color:var(--muted); font-size:13px; margin-top:10px; }
+
+  .hero { display:grid; grid-template-columns:1.1fr .9fr; gap:48px; align-items:center; }
+  .hero-shots { display:flex; gap:14px; justify-content:center; }
+  /* flex:1 1 0 + min-width:0 (instead of a plain width:33%) lets the three shots share
+     space evenly at any container size without flex's default shrink math distorting
+     them; aspect-ratio (matched to the real 1284x2778 screenshot export) locks the
+     shape, and object-fit:cover is the fallback if a browser's rounding ever produces
+     a box that doesn't exactly match the ratio, so it crops instead of stretching. */
+  .hero-shots img { flex:1 1 0; min-width:0; aspect-ratio:1284/2778; object-fit:cover; border-radius:20px; border:1px solid var(--line); box-shadow:0 20px 60px -20px rgba(0,0,0,.6); }
+  .hero-shots img:nth-child(2) { transform:translateY(-18px) scale(1.06); position:relative; z-index:1; border-color:var(--accent); }
+
+  .steps { display:grid; grid-template-columns:repeat(3,1fr); gap:28px; }
+  .step { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:22px; }
+  .step .num { display:inline-flex; align-items:center; justify-content:center; width:30px; height:30px; border-radius:50%; background:var(--accent); color:#fff; font-weight:700; font-size:14px; margin-bottom:14px; }
+  .step img { width:100%; aspect-ratio:1284/2778; object-fit:cover; border-radius:12px; border:1px solid var(--line); margin-top:16px; }
+  .step p { color:var(--muted); margin:0; font-size:15px; }
+
+  .features { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+  .feature { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:22px; }
+  .feature p { color:var(--muted); margin:0; font-size:15px; }
+  .feature .tag { display:inline-block; font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--accent2); border:1px solid var(--accent2); border-radius:20px; padding:2px 9px; margin-bottom:10px; }
+
+  .everywhere { display:grid; grid-template-columns:1fr 1fr; gap:22px; align-items:center; }
+  .everywhere .device-shots { display:flex; flex-direction:column; gap:16px; }
+  /* Two different real screenshot shapes (iPad landscape, Mac desktop) — each gets its
+     own aspect-ratio so the grid never has to guess and can't squash either one. */
+  .everywhere img { width:100%; border-radius:14px; border:1px solid var(--line); box-shadow:0 20px 50px -24px rgba(0,0,0,.6); object-fit:cover; }
+  .everywhere img.ipad { aspect-ratio:1100/758; }
+  .everywhere img.mac { aspect-ratio:1100/687; }
+
+  .pricing { display:grid; grid-template-columns:1fr 1fr; gap:22px; align-items:start; }
+  .price-card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:28px; }
+  .price-card.pro { border-color:var(--accent); }
+  .price-card .amount { font-size:36px; font-weight:800; margin:6px 0 14px; }
+  .price-card ul { padding-left:20px; margin:14px 0 0; color:var(--muted); font-size:15px; }
+  .price-card li { margin:6px 0; }
+
+  details.faq { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:10px 0; }
+  details.faq summary { cursor:pointer; font-weight:600; list-style:none; display:flex; justify-content:space-between; gap:12px; }
+  details.faq summary::-webkit-details-marker { display:none; }
+  details.faq summary::after { content:"+"; color:var(--accent); font-size:20px; flex-shrink:0; }
+  details.faq[open] summary::after { content:"–"; }
+  details.faq p { color:var(--muted); margin:12px 0 2px; font-size:15px; }
+
   .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:18px 20px; margin:18px 0; }
   .card p { margin:6px 0; }
   a { color:var(--accent); }
-  .btn { display:inline-block; background:var(--accent); color:#fff; text-decoration:none; padding:10px 16px; border-radius:10px; font-weight:600; }
-  ul { padding-left:22px; } li { margin:6px 0; }
-  footer { border-top:1px solid var(--line); margin-top:56px; color:var(--muted); font-size:14px; }
+
+  .fans { color:var(--muted); font-size:15px; border-top:1px solid var(--line); padding-top:28px; margin-top:8px; }
+
+  footer { border-top:1px solid var(--line); margin-top:24px; color:var(--muted); font-size:14px; }
+
+  @media (max-width: 860px) {
+    h1 { font-size:32px; }
+    .hero { grid-template-columns:1fr; }
+    .hero-shots { order:-1; }
+    .steps, .features, .pricing, .everywhere { grid-template-columns:1fr; }
+    .hero-shots img:nth-child(2) { transform:none; }
+  }
 </style>
 </head>
 <body>
 <header>
   <div class="wrap">
     <nav>
-      <a href="index.html" class="on">Gig Recorder</a>
-      <a href="#support">Support</a>
-      <a href="privacy.html">Privacy Policy</a>
+      <a href="index.html" class="brand">Gig Recorder</a>
+      <div class="links">
+        <a href="#how-it-works">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="#support">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
     </nav>
   </div>
 </header>
 
-<main class="wrap">
-  <h1>Gig Recorder</h1>
-  <p class="sub">Record the whole gig. Relive every gig as a playlist.</p>
-  <p>Gig Recorder records your entire set on iPhone, iPad, or Mac, using the built-in mic or a connected USB interface or the venue's sound board, splits the recording into songs, names them, and turns the night into a playlist you can replay and share with the band. Add a photo to any gig and it follows the recording into Playlists and Now Playing. Everything you need to record, split, name, edit, Enhance, and build playlists is free. Gig Recorder Pro (one-time purchase) adds sharing, export, Dropbox linking, iCloud sync, and the Effects screen.</p>
+<main>
 
-  <h2 id="support">Support</h2>
-  <div class="card">
-    <p><strong>Email:</strong> <a href="mailto:gig.recorder.support@gmail.com">gig.recorder.support@gmail.com</a></p>
-    <p>Include your device model, iOS or macOS version, and the app build number from Settings &gt; About. We usually reply within two business days.</p>
-  </div>
+  <!-- HERO -->
+  <section>
+    <div class="wrap hero">
+      <div>
+        <p class="tagline">Record the moment.</p>
+        <h1>Record the entire show.<br>Walk away with a playlist.</h1>
+        <p class="lead">Gig Recorder captures your whole gig on iPhone, iPad, or Mac, then automatically splits it into named tracks within a playlist you can replay and share with your band, friends, or fans.</p>
+        <div class="cta-row">
+          <!-- TODO (Rob): once the App Store listing is live, replace this with the
+               official "Download on the App Store" badge linking to your apps.apple.com URL. -->
+          <a class="btn btn-primary" href="mailto:gig.recorder.support@gmail.com?subject=Notify%20me%20when%20Gig%20Recorder%20launches">Get notified at launch</a>
+          <a class="btn btn-ghost" href="#how-it-works">See how it works</a>
+        </div>
+        <p class="cta-note">Currently in Apple App Review. Free to record, split, name, edit, Enhance, and build playlists.</p>
+      </div>
+      <div class="hero-shots">
+        <img src="images/screenshot-record.webp" alt="Gig Recorder record screen with live input levels" width="253" height="547" loading="eager">
+        <img src="images/screenshot-song-editor.webp" alt="Gig Recorder waveform editor splitting a set into songs" width="253" height="547" loading="eager">
+        <img src="images/screenshot-playlist-player.webp" alt="Gig Recorder playlist player with gig photo and song list" width="253" height="547" loading="eager">
+      </div>
+    </div>
+  </section>
 
-  <h2>Frequently asked questions</h2>
+  <!-- PROBLEM / PROMISE -->
+  <section class="tight">
+    <div class="narrow">
+      <p class="eyebrow">The problem</p>
+      <h2>You hit record, play a great gig, and end up with one endless file nobody ever listens back to.</h2>
+      <p class="lead" style="margin-bottom:0;">Gig Recorder turns one long recording of your gig into a shareable playlist of named songs, so the night can be played back anywhere and remembered anytime.</p>
+    </div>
+  </section>
 
-  <h3>Do I have to buy anything to record?</h3>
-  <p>No. Recording, splitting, naming, editing, one-tap Enhance, and playlists are free with no time limit. Pro unlocks sharing, exporting, Dropbox and iCloud sync, and Effects.</p>
+  <!-- HOW IT WORKS -->
+  <section id="how-it-works">
+    <div class="wrap">
+      <p class="eyebrow">How it works</p>
+      <h2>Bar gig, open mic, rehearsal, or basement jam: record the moment.</h2>
+      <div class="steps" style="margin-top:32px;">
+        <div class="step">
+          <span class="num">1</span>
+          <h3>Tap record.</h3>
+          <p>Watch the red waveform and input levels, so you know it's rolling. Start it from your Apple Watch if your phone's out of reach.</p>
+          <img src="images/screenshot-record.webp" alt="Tapping record in Gig Recorder" loading="lazy">
+        </div>
+        <div class="step">
+          <span class="num">2</span>
+          <h3>Stop when the set's over.</h3>
+          <p>Gig Recorder splits the recording into individual songs and names them from your private reference library. Fine-tune anything in the editor.</p>
+          <img src="images/screenshot-song-editor.webp" alt="Editing song markers in Gig Recorder" loading="lazy">
+        </div>
+        <div class="step">
+          <span class="num">3</span>
+          <h3>Play it back, or share it.</h3>
+          <p>Your songs land in a ready-made playlist, already enhanced, so you can relive the night and share it with your band, friends, or fans.</p>
+          <img src="images/screenshot-share.webp" alt="Sharing a Gig Recorder playlist" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <h3>Can I record from a mixer or an audio interface?</h3>
-  <p>Yes. Use the built-in mic, or connect a USB interface or the venue's sound board and pick it as your input, on iPhone, iPad, or Mac.</p>
+  <!-- FEATURES -->
+  <section id="features">
+    <div class="wrap">
+      <p class="eyebrow">Features</p>
+      <h2>Everything a live recording needs, nothing it doesn't.</h2>
+      <div class="features" style="margin-top:32px;">
+        <div class="feature">
+          <h3>Splits your set into songs, automatically</h3>
+          <p>No scrubbing a 90-minute file. Each song becomes its own track, ready to play.</p>
+        </div>
+        <div class="feature">
+          <h3>Names your songs, and gets smarter every gig</h3>
+          <p>Gig Recorder builds a private song reference library from your own recordings. Name a song once and it recognizes it next time.</p>
+        </div>
+        <div class="feature">
+          <span class="tag">Private</span>
+          <h3>Private by design</h3>
+          <p>No accounts, no tracking, no ads. Your recordings and your song library stay on your device, or your own iCloud or Dropbox if you choose to sync.</p>
+        </div>
+        <div class="feature">
+          <h3>Fix anything in seconds</h3>
+          <p>Drag markers, rename, add or remove songs in a fast waveform editor. You're always in control of where a song starts and ends.</p>
+        </div>
+        <div class="feature">
+          <h3>Make it sound like the room sounded</h3>
+          <p>One-tap Enhance cleans up and levels the whole set, free. Fine-tune the Effects to taste with Pro.</p>
+        </div>
+        <div class="feature">
+          <h3>Build playlists across every gig</h3>
+          <p>Pull the best takes from any night into playlists, and relisten on iPhone, iPad, or Mac.</p>
+        </div>
+        <div class="feature">
+          <h3>A photo for every gig</h3>
+          <p>Add a photo to any gig and it follows the recording into Playlists, shared playlists, and Now Playing, so you can spot the right night at a glance.</p>
+        </div>
+        <div class="feature">
+          <h3>Organize with folders</h3>
+          <p>Group gigs and playlists into folders, so a season of shows or a whole tour stays tidy instead of one long list.</p>
+        </div>
+        <div class="feature">
+          <h3>Favorites, custom playlists, and Shuffle All</h3>
+          <p>Heart your favorite songs, build a custom playlist that pulls from any gig, or shuffle your entire library at once.</p>
+        </div>
+        <div class="feature">
+          <h3>Search across every playlist</h3>
+          <p>Find a song in one search, no matter which gig or playlist it's tucked into.</p>
+        </div>
+        <div class="feature">
+          <h3>A guided tour, built in</h3>
+          <p>A hands-on walkthrough shows you record, edit, playlist, and play the first time you open the app.</p>
+        </div>
+        <div class="feature">
+          <span class="tag">Pro</span>
+          <h3>Share the night</h3>
+          <p>Send tonight's set to your bandmates, friends, or fans in a tap. Export individual songs or the entire gig.</p>
+        </div>
+        <div class="feature">
+          <h3>Supports multiple input sources</h3>
+          <p>Use the built-in mic, or connect a USB interface or the venue's sound board and pick it as your input.</p>
+        </div>
+        <div class="feature">
+          <h3>Hands-free at the gig</h3>
+          <p>Start and stop recording from your Apple Watch without touching your phone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <h3>My bandmate sent me a shared playlist. Do I need Pro to listen?</h3>
-  <p>No. Receiving and listening to a shared playlist is free. Only the person sharing needs Pro.</p>
+  <!-- EVERYWHERE YOU PLAY -->
+  <section class="tight">
+    <div class="wrap everywhere">
+      <div>
+        <p class="eyebrow">Everywhere you play</p>
+        <h2>iPhone, iPad, and Mac.</h2>
+        <p class="lead">Record on whichever device is closest, and relisten on any of them. Build playlists on your iPad after the show, or catch up on the Mac at home.</p>
+      </div>
+      <div class="device-shots">
+        <img class="ipad" src="images/screenshot-ipad-playlists.webp" alt="Gig Recorder playlists on iPad" loading="lazy">
+        <img class="mac" src="images/screenshot-mac-record.webp" alt="Gig Recorder record screen on Mac" loading="lazy">
+      </div>
+    </div>
+  </section>
 
-  <h3>I bought Pro on one device. How do I get it on another?</h3>
-  <p>Sign in with the same Apple Account, open Settings in Gig Recorder, and tap Restore Purchase. Pro also supports Family Sharing.</p>
+  <!-- WHO IT'S FOR -->
+  <section class="tight">
+    <div class="narrow">
+      <p class="eyebrow">Who it's for</p>
+      <p class="lead" style="margin-bottom:6px;">Gigging bands and cover acts. Solo and singer-songwriter players. Open-mic hosts and regulars. Rehearsal-heavy groups. Students and teachers. Anyone who plays live music and wants every performance captured and organized, not lost.</p>
+      <p class="fans">For fans: at record-friendly shows, festivals, and open mics, Gig Recorder turns the night into a playlist you can relive, so you don't need to know the setlist to find your favorite moment. Please record only where the artist and venue allow it.</p>
+    </div>
+  </section>
 
-  <h3>Where are my recordings stored?</h3>
-  <p>On your device, inside the app's own folder. They are never uploaded unless you turn on iCloud features, connect Dropbox, or share something. See the <a href="privacy.html">Privacy Policy</a>.</p>
+  <!-- PRICING -->
+  <section id="pricing">
+    <div class="wrap">
+      <p class="eyebrow">Pricing</p>
+      <h2>Free to start. One small unlock.</h2>
+      <div class="pricing" style="margin-top:32px;">
+        <div class="price-card">
+          <h3>Free</h3>
+          <div class="amount">$0</div>
+          <p style="color:var(--muted);">Everything you need to capture and organize a show.</p>
+          <ul>
+            <li>Record unlimited-length gigs</li>
+            <li>Automatic song splitting</li>
+            <li>Song naming that learns privately</li>
+            <li>Waveform editor</li>
+            <li>One-tap Sound Enhance</li>
+            <li>Playlists across every gig</li>
+            <li>A photo for every gig</li>
+            <li>Folders to organize recordings &amp; playlists</li>
+            <li>Favorites, custom playlists, and Shuffle All</li>
+            <li>Search across every playlist</li>
+            <li>Multiple input sources: mic, USB, or the board</li>
+            <li>A guided tour, built in</li>
+          </ul>
+        </div>
+        <div class="price-card pro">
+          <h3>Gig Recorder Pro</h3>
+          <div class="amount">$1.29 <span style="font-size:15px; color:var(--muted); font-weight:400;">one time</span></div>
+          <p style="color:var(--muted);">No subscription. Buy once, use forever.</p>
+          <ul>
+            <li>Share sets and songs with your band, friends, or fans</li>
+            <li>Export individual songs or a whole gig</li>
+            <li>Sync to your own Dropbox or iCloud</li>
+            <li>Customize Effects chain</li>
+          </ul>
+        </div>
+      </div>
+      <p class="cta-note">Receiving and listening to a shared playlist is always free, whether or not you have Pro.</p>
+    </div>
+  </section>
 
-  <h3>How do I back up my recordings?</h3>
-  <p>Turn on iCloud session sync in Settings (Pro) to mirror your editable gigs to iCloud Drive, or export a gig to an iCloud Drive or Dropbox folder. Deleting the app deletes recordings that were only on the device, so export or sync anything you want to keep.</p>
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap narrow">
+      <p class="eyebrow">FAQ</p>
+      <h2>Frequently asked questions</h2>
 
-  <h3>The recording stopped or the app was killed mid-set. What happened?</h3>
-  <p>Keep the device plugged in, keep Gig Recorder in the foreground or locked with the app still running, and avoid switching to other audio apps while recording. If you use a USB interface, connect it before you press Record. If a recording was cut short, the part already captured is saved.</p>
+      <details class="faq">
+        <summary>Is there an app that records a whole live set and splits it into songs?</summary>
+        <p>Yes. Gig Recorder is a live music recording app for iPhone, iPad, and Mac that records an entire gig, concert set, or rehearsal as one take and automatically splits it into separate, named song tracks when you stop. You can adjust any split in the waveform editor.</p>
+      </details>
 
-  <h3>Songs were not split or named correctly.</h3>
-  <p>Open the set in the Song Editor to move, add, or delete markers and rename songs. Naming improves over time as the app learns your songs from the recordings you name.</p>
+      <details class="faq">
+        <summary>How does Gig Recorder know the names of my songs?</summary>
+        <p>Gig Recorder names songs using a private song reference library built only from your own recordings. Name a song once and the app recognizes it the next time you play it. Every name you confirm or correct teaches the library, so auto-naming and splitting get faster and more accurate the more gigs you record.</p>
+      </details>
 
-  <h3>Can I add a photo to a gig?</h3>
-  <p>Yes. Add a photo to any gig and it shows up in Playlists, shared playlists, and Now Playing, so you can spot the right night at a glance.</p>
+      <details class="faq">
+        <summary>Does Gig Recorder use Shazam or an online song database?</summary>
+        <p>No. Song recognition runs entirely on your device against your own private library. Gig Recorder never looks up your audio against a public song catalog and never sends audio fingerprints to any online service.</p>
+      </details>
 
-  <h3>How do I request a refund?</h3>
-  <p>Purchases are handled by Apple. Go to <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>, sign in, and choose the Gig Recorder Pro purchase.</p>
+      <details class="faq">
+        <summary>Is my song library or recording data shared with other users?</summary>
+        <p>No. Your reference library is built from your recordings alone and stays on your device. It is never pooled with other users, shared, sold, or used to improve anything for anyone else.</p>
+      </details>
 
-  <h3>How do I delete my data?</h3>
-  <p>Delete gigs or playlists inside the app, or delete the app to remove everything on the device. Files you exported to iCloud Drive or Dropbox are yours to delete from those services. We hold no copies of anything.</p>
+      <details class="faq">
+        <summary>Where are my recordings stored, and does Gig Recorder collect any data?</summary>
+        <p>Recordings are stored on your device by default; with Pro you can sync them to your own Dropbox or iCloud. Gig Recorder runs no servers and has no accounts, no analytics, and no ads. Nothing is collected or stored for use by anyone but you. See the <a href="privacy.html">Privacy Policy</a>.</p>
+      </details>
 
-  <h2>Links</h2>
-  <ul>
-    <li><a href="privacy.html">Privacy Policy</a></li>
-    <li><a href="https://reportaproblem.apple.com">Apple purchase and refund help</a></li>
-  </ul>
+      <details class="faq">
+        <summary>Is Gig Recorder free? What does Pro cost?</summary>
+        <p>Gig Recorder is free to download and free to record, split, name, edit, Enhance, and build playlists. Gig Recorder Pro is a one-time $1.29 in-app purchase that unlocks sharing, exporting songs or whole sets, Dropbox and iCloud sync, and custom Effects. There is no subscription.</p>
+      </details>
+
+      <details class="faq">
+        <summary>Can I share a gig recording with my band or fans?</summary>
+        <p>Yes, with Gig Recorder Pro. Share a set or a single song to bandmates, friends, or fans in a tap, export individual songs or the entire set as audio files, or sync everything to your own Dropbox or iCloud. Receiving and listening to a shared playlist is always free.</p>
+      </details>
+
+      <details class="faq">
+        <summary>Does Gig Recorder improve the sound quality of a live recording?</summary>
+        <p>Yes. One-tap Enhance cleans up and levels the whole recording so it sounds like the room sounded, and it's free. Gig Recorder Pro lets you fine-tune the Effects chain to taste.</p>
+      </details>
+
+      <details class="faq">
+        <summary>What devices does Gig Recorder work on?</summary>
+        <p>Gig Recorder runs on iPhone, iPad, and Mac, and you can start and stop recording hands-free from your Apple Watch.</p>
+      </details>
+
+      <details class="faq">
+        <summary>Do I need an account to use Gig Recorder?</summary>
+        <p>No. There is no login or account to record, edit, or build playlists. Sharing with bandmates uses your own iCloud, and exports go to your own Dropbox or iCloud.</p>
+      </details>
+
+      <details class="faq">
+        <summary>Can fans use Gig Recorder to record concerts?</summary>
+        <p>Yes, where recording is permitted. At record-friendly shows, festivals, and open mics, Gig Recorder splits the night into named songs, so you don't need to know the setlist to find your favorite moment. Please record only where the artist and venue allow it.</p>
+      </details>
+
+      <details class="faq">
+        <summary>Can I use Gig Recorder to record band rehearsals or practice?</summary>
+        <p>Yes. Record the whole rehearsal, get it back split into songs, fix any boundary in the editor, and, with Pro, share the takes with the band for review the same night.</p>
+      </details>
+
+      <details class="faq">
+        <summary>Can I record from a mixer or an audio interface?</summary>
+        <p>Yes. Use the built-in mic, or connect a USB interface or the venue's sound board and pick it as your input, on iPhone, iPad, or Mac.</p>
+      </details>
+
+      <details class="faq">
+        <summary>I bought Pro on one device. How do I get it on another?</summary>
+        <p>Sign in with the same Apple Account, open Settings in Gig Recorder, and tap Restore Purchase. Pro also supports Family Sharing.</p>
+      </details>
+
+      <details class="faq">
+        <summary>How do I request a refund?</summary>
+        <p>Purchases are handled by Apple. Go to <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>, sign in, and choose the Gig Recorder Pro purchase.</p>
+      </details>
+
+      <details class="faq">
+        <summary>How do I delete my data?</summary>
+        <p>Delete gigs or playlists inside the app, or delete the app to remove everything on the device. Files you exported to iCloud Drive or Dropbox are yours to delete from those services. We hold no copies of anything.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- SUPPORT -->
+  <section id="support" class="tight">
+    <div class="wrap narrow">
+      <p class="eyebrow">Support</p>
+      <h2>Need help?</h2>
+      <div class="card">
+        <p><strong>Email:</strong> <a href="mailto:gig.recorder.support@gmail.com">gig.recorder.support@gmail.com</a></p>
+        <p>Include your device model, iOS or macOS version, and the app build number from Settings &gt; About. We usually reply within two business days.</p>
+      </div>
+      <ul>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="https://reportaproblem.apple.com">Apple purchase and refund help</a></li>
+      </ul>
+    </div>
+  </section>
+
 </main>
 
 <footer>
-  <div class="wrap">© 2026 Robbie D Productions · <a href="index.html">Home</a> · <a href="#support">Support</a> · <a href="privacy.html">Privacy Policy</a></div>
+  <div class="wrap">
+    <p class="tagline" style="margin:0 0 8px;">Record the moment.</p>
+    © 2026 Robbie D Productions · <a href="index.html">Home</a> · <a href="#support">Support</a> · <a href="privacy.html">Privacy Policy</a>
+  </div>
 </footer>
 </body>
 </html>

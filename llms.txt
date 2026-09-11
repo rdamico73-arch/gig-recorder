@@ -1,0 +1,31 @@
+# Gig Recorder
+
+> Gig Recorder is a live music recording app for iPhone, iPad, and Mac. It records an
+> entire gig, concert set, or rehearsal as one take, automatically splits it into
+> individually named songs, and turns the night into a shareable playlist. Song naming
+> is done entirely on-device against a private reference library built from the user's
+> own recordings; it never uses Shazam or any public/online song database. Free to
+> record, split, name, edit, Enhance, and build playlists. Gig Recorder Pro is a
+> one-time $1.29 in-app purchase (no subscription) that unlocks sharing, export,
+> Dropbox/iCloud sync, and custom Effects. No accounts, no tracking, no ads, and no
+> servers: nothing is collected or stored for use by anyone but the user.
+
+## Key facts
+- Platforms: iPhone, iPad, Mac (Mac Catalyst), with Apple Watch remote start/stop.
+- Core feature: automatic song-boundary detection that splits one long live recording
+  into separate, named tracks.
+- Song naming: a private, on-device, per-user reference library, not Shazam and not a
+  public/online music database. It learns from names the user confirms or corrects.
+- Privacy: no accounts, no analytics, no ads, no company servers. Recordings and the
+  song library stay on-device unless the user opts into their own iCloud or Dropbox.
+- Pricing: free core app (record, split, name, edit, one-tap Enhance, playlists);
+  Gig Recorder Pro unlocks sharing, export, cloud sync, and custom Effects for a
+  one-time $1.29 purchase.
+- Audience: gigging bands, cover acts, solo/singer-songwriter performers, open-mic
+  hosts, rehearsal-heavy groups, and (secondarily) fans at record-friendly shows.
+
+## Pages
+- [Home / product overview](https://rdamico73-arch.github.io/gig-recorder/index.html): hero, how it works, features, pricing, and FAQ.
+- [FAQ](https://rdamico73-arch.github.io/gig-recorder/index.html#faq): common questions about splitting, naming, privacy, pricing, and devices, marked up with FAQPage structured data.
+- [Privacy Policy](https://rdamico73-arch.github.io/gig-recorder/privacy.html): full data-handling policy ("Data Not Collected").
+- [Support](https://rdamico73-arch.github.io/gig-recorder/index.html#support): contact email and refund help.

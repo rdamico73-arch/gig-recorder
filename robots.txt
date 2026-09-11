@@ -1,0 +1,49 @@
+# Gig Recorder — robots.txt
+# Everything on this site is public marketing/support content — allow all crawlers,
+# including AI assistant and answer-engine crawlers, so Gig Recorder can be found
+# and cited by Google, Bing, ChatGPT, Perplexity, Gemini, and Claude.
+
+User-agent: *
+Allow: /
+
+# Known AI/answer-engine crawlers (explicit allow, in case a default ever changes)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://rdamico73-arch.github.io/gig-recorder/sitemap.xml
