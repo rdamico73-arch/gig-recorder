@@ -167,9 +167,14 @@
   .step p { color:var(--muted); margin:0; font-size:15px; }
 
   .features { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
-  .feature { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:22px; }
+  .feature { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:22px; overflow:hidden; }
   .feature p { color:var(--muted); margin:0; font-size:15px; }
   .feature .tag { display:inline-block; font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--accent2); border:1px solid var(--accent2); border-radius:20px; padding:2px 9px; margin-bottom:10px; }
+  /* Cropped, zoomed-in screenshots bleed to the card edges (negative margin =
+     card padding) so they read as a "window" into the app rather than a framed
+     photo. object-fit:contain + a near-black background keeps every crop's
+     mismatched aspect ratio from ever stretching or clipping oddly. */
+  .feature-shot { display:block; width:calc(100% + 44px); height:168px; margin:-22px -22px 16px; object-fit:contain; background:#05070c; }
 
   .everywhere { display:grid; grid-template-columns:1fr 1fr; gap:22px; align-items:center; }
   .everywhere .device-shots { display:flex; flex-direction:column; gap:16px; }
@@ -296,10 +301,12 @@
       <h2>Everything a live recording needs, nothing it doesn't.</h2>
       <div class="features" style="margin-top:32px;">
         <div class="feature">
+          <img class="feature-shot" src="images/feature-split.webp" alt="Waveform with colored song-split markers in Gig Recorder's editor" loading="lazy">
           <h3>Splits your set into songs, automatically</h3>
           <p>No scrubbing a 90-minute file. Each song becomes its own track, ready to play.</p>
         </div>
         <div class="feature">
+          <img class="feature-shot" src="images/feature-names.webp" alt="A named, timestamped song row in a Gig Recorder set" loading="lazy">
           <h3>Names your songs, and gets smarter every gig</h3>
           <p>Gig Recorder builds a private song reference library from your own recordings. Name a song once and it recognizes it next time.</p>
         </div>
@@ -309,26 +316,32 @@
           <p>No accounts, no tracking, no ads. Your recordings and your song library stay on your device, or your own iCloud or Dropbox if you choose to sync.</p>
         </div>
         <div class="feature">
+          <img class="feature-shot" src="images/feature-fix.webp" alt="Dragging a song-split marker in Gig Recorder's waveform editor" loading="lazy">
           <h3>Fix anything in seconds</h3>
           <p>Drag markers, rename, add or remove songs in a fast waveform editor. You're always in control of where a song starts and ends.</p>
         </div>
         <div class="feature">
+          <img class="feature-shot" src="images/feature-enhance.webp" alt="Gig Recorder's Enhance/Effects screen with a dynamic EQ curve" loading="lazy">
           <h3>Make it sound like the room sounded</h3>
           <p>One-tap Enhance cleans up and levels the whole set, free. Fine-tune the Effects to taste with Pro.</p>
         </div>
         <div class="feature">
+          <img class="feature-shot" src="images/feature-relisten.webp" alt="Playlists built from past gigs in Gig Recorder" loading="lazy">
           <h3>Build playlists across every gig</h3>
           <p>Pull the best takes from any night into playlists, and relisten on iPhone, iPad, or Mac.</p>
         </div>
         <div class="feature">
+          <img class="feature-shot" src="images/feature-photo.webp" alt="A gig photo shown on a Gig Recorder playlist" loading="lazy">
           <h3>A photo for every gig</h3>
           <p>Add a photo to any gig and it follows the recording into Playlists, shared playlists, and Now Playing, so you can spot the right night at a glance.</p>
         </div>
         <div class="feature">
+          <img class="feature-shot" src="images/feature-folders.webp" alt="Gigs organized into folders in Gig Recorder" loading="lazy">
           <h3>Organize with folders</h3>
           <p>Group gigs and playlists into folders, so a season of shows or a whole tour stays tidy instead of one long list.</p>
         </div>
         <div class="feature">
+          <img class="feature-shot" src="images/feature-favorites.webp" alt="Shuffle All and Pinned playlists in Gig Recorder" loading="lazy">
           <h3>Favorites, custom playlists, and Shuffle All</h3>
           <p>Heart your favorite songs, build a custom playlist that pulls from any gig, or shuffle your entire library at once.</p>
         </div>
@@ -337,15 +350,18 @@
           <p>Find a song in one search, no matter which gig or playlist it's tucked into.</p>
         </div>
         <div class="feature">
+          <img class="feature-shot" src="images/feature-tour.webp" alt="Gig Recorder's built-in interactive walkthrough menu" loading="lazy">
           <h3>A guided tour, built in</h3>
           <p>A hands-on walkthrough shows you record, edit, playlist, and play the first time you open the app.</p>
         </div>
         <div class="feature">
+          <img class="feature-shot" src="images/feature-share.webp" alt="Copy Shared Playlist sheet in Gig Recorder" loading="lazy">
           <span class="tag">Pro</span>
           <h3>Share the night</h3>
           <p>Send tonight's set to your bandmates, friends, or fans in a tap. Export individual songs or the entire gig.</p>
         </div>
         <div class="feature">
+          <img class="feature-shot" src="images/feature-input.webp" alt="Input source picker in Gig Recorder's record screen" loading="lazy">
           <h3>Supports multiple input sources</h3>
           <p>Use the built-in mic, or connect a USB interface or the venue's sound board and pick it as your input.</p>
         </div>
