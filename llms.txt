@@ -25,7 +25,7 @@
   hosts, rehearsal-heavy groups, and (secondarily) fans at record-friendly shows.
 
 ## Pages
-- [Home / product overview](https://rdamico73-arch.github.io/gig-recorder/index.html): hero, how it works, features, pricing, and FAQ.
-- [FAQ](https://rdamico73-arch.github.io/gig-recorder/index.html#faq): common questions about splitting, naming, privacy, pricing, and devices, marked up with FAQPage structured data.
-- [Privacy Policy](https://rdamico73-arch.github.io/gig-recorder/privacy.html): full data-handling policy ("Data Not Collected").
-- [Support](https://rdamico73-arch.github.io/gig-recorder/index.html#support): contact email and refund help.
+- [Home / product overview](https://www.gig-recorder.com/index.html): hero, how it works, features, pricing, and FAQ.
+- [FAQ](https://www.gig-recorder.com/index.html#faq): common questions about splitting, naming, privacy, pricing, and devices, marked up with FAQPage structured data.
+- [Privacy Policy](https://www.gig-recorder.com/privacy.html): full data-handling policy ("Data Not Collected").
+- [Support](https://www.gig-recorder.com/index.html#support): contact email and refund help.
